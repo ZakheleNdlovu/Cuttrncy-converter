@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="box">
+        <h1>Currency Converter</h1>
+        <input type="text" id="textbox" value="0" onclick="clean()">
+        <br>
+        <div>
+            <input type="radio" id="R2D">
+            <label for="R2D">Rands → Dollars</label>  
+        </div>
+        <br>
+        <div>
+            <input type="radio" id="D2R">
+            <label for="D2R">Dollars → Rands</label>
+        </div>
+        <br>
+        <div>
+            <input type="radio" id="R2P">
+            <label for="R2P">Rands → Pounds</label>
+        </div>
+        <br>
+        <div>
+            <input type="radio" id="P2R">
+            <label for="P2R">Pounds → Rands</label>
+        </div>
+        <br>
+        <button id="submit" onclick="currency()">Submit</button>
+        <br>
+        <h2 id="results">Select currency</h2>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
