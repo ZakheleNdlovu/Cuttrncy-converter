@@ -1,3 +1,3 @@
 this is a currency converter.
-it was createdwith html, css and javascript.
-it converts rand to dollar and rand to pound.
+it was created with html, css and javascript.
+it makes conversations from either rand to dollar, rand to pound,or dollar to pound
