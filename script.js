@@ -9,11 +9,11 @@ let rand_box = document.getElementById("rand-box");
 rand_submit.addEventListener("click",()=>{
     if (rand2dollar_radio.checked){
         amount = rand_text.value / 17.13
-        rand_result.innerHTML = "R"+amount.toFixed(2)
+        rand_result.innerHTML = "$"+amount.toFixed(2)
     }
     else if (rand2euro_radio.checked){
         amount = rand_text.value / 23.47
-        rand_result.innerHTML = "R"+amount.toFixed(2)
+        rand_result.innerHTML = "£"+amount.toFixed(2)
     }
 })
 
@@ -30,8 +30,8 @@ dollar_submit.addEventListener("click",()=>{
         dollar_result.innerHTML = "R"+amount.toFixed(2)
     }
     else if (dollar2euro_radio.checked){
-        amount = dollar_text.value / 0.89
-        dollar_result.innerHTML = "R"+amount.toFixed(2)
+        amount = dollar_text.value * 0.89
+        dollar_result.innerHTML = "£"+amount.toFixed(2)
     }
 })
 
@@ -48,8 +48,8 @@ euro_submit.addEventListener("click",()=>{
         euro_result.innerHTML = "R"+amount.toFixed(2)
     }
     else if (euro2dollar_radio.checked){
-        amount = euro_text.value * 0.89
-        euro_result.innerHTML = "R"+amount.toFixed(2)
+        amount = euro_text.value / 0.89
+        euro_result.innerHTML = "$"+amount.toFixed(2)
     }
 })
 
