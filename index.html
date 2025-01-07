@@ -1,28 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Currency converter</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="frame">
         <h1>Currency Converter</h1>
         <h3>Convert from: </h3>
         <nav id="radio">
-        <input type="radio" name="check-box" id="rand-check">
-        <label for="rands-check">Rands</label>
-        <input type="radio" name="check-box" id="dollar-check">
-        <label for="dollars-check">Dollars</label>
-        <input type="radio" name="check-box" id="euro-check">
-        <label for="euro-check">Euro</label>
+            <input type="radio" name="check-box" id="rand-check">
+            <label for="rands-check">Rands</label>
+            <input type="radio" name="check-box" id="dollar-check">
+            <label for="dollars-check">Dollars</label>
+            <input type="radio" name="check-box" id="euro-check">
+            <label for="euro-check">Euro</label>
         </nav>
+        <br><br>
         <br>
         <div class="rand-box" id="rand-box">
             <div>
-            <label for="euro-textbox">R</label>
-            <input type="text" id="rand-textbox"  onclick="clean()">
+                <label for="euro-textbox">R</label>
+                <input type="text" id="rand-textbox" onclick="clean()">
             </div>
             <br>
             <div>
@@ -34,17 +37,17 @@
                 <input type="radio" name="currency" id="rand2euro-radio">
                 <label for="rand2euro-radio">Euro</label>
             </div>
-    
+
             <br>
-            <button id="rand-submit" >Submit</button>
+            <button id="rand-submit">Submit</button>
             <br>
             <h2 id="rand-results">Select currency</h2>
-            
+
         </div>
         <div class="dollar-box" id="dollar-box">
             <div>
-            <label for="dollar-textbox">$</label>
-            <input type="text" id="dollar-textbox"  onclick="clean()">
+                <label for="dollar-textbox">$</label>
+                <input type="text" id="dollar-textbox" onclick="clean()">
             </div>
             <br>
             <div>
@@ -56,16 +59,16 @@
                 <input type="radio" name="currency" id="dollar2euro-radio">
                 <label for="dollar2euro-radio">Euro</label>
             </div>
-    
+
             <br>
-            <button id="dollar-submit" >Submit</button>
+            <button id="dollar-submit">Submit</button>
             <br>
             <h2 id="dollar-results">Select currency</h2>
         </div>
         <div class="euro-box" id="euro-box">
             <div>
-            <label for="euro-textbox">£</label>
-            <input type="text" id="euro-textbox"  onclick="clean()">
+                <label for="euro-textbox">£</label>
+                <input type="text" id="euro-textbox" onclick="clean()">
             </div>
             <br>
             <div>
@@ -77,13 +80,14 @@
                 <input type="radio" name="currency" id="euro2dollar-radio">
                 <label for="euro2dollar-radio">Dollar</label>
             </div>
-    
+
             <br>
-            <button id="euro-submit" >Submit</button>
+            <button id="euro-submit">Submit</button>
             <br>
             <h2 id="euro-results">Select currency</h2>
         </div>
     </div>
     <script src="script.js"></script>
 </body>
+
 </html>
